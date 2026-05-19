@@ -133,13 +133,13 @@ header button {
   display: block;
 }
 #visual li.bg1 {
-  background-image: url(img/main_visual_01.jpg);
+  background-image: url(../img/main_visual_01.jpg);
 }
 #visual li.bg2 {
-  background-image: url(img/main_visual_02.jpg);
+  background-image: url(../img/main_visual_02.jpg);
 }
 #visual li.bg3 {
-  background-image: url(img/main_visual_03.jpg);
+  background-image: url(../img/main_visual_03.jpg);
 }
 #visual .bg li.on {
   transform: scale(1);
@@ -491,7 +491,7 @@ header button {
 #container .con03 {
   max-width: 1400px;
   height: auto;
-  background: url(img/main_section03_background.jpg) no-repeat center / cover;
+  background: url(../img/main_section03_background.jpg) no-repeat center / cover;
   margin: 8rem auto;
   display: flex;
   padding: 8rem 4rem;
