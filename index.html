@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="inner">
+          <div class="left">
+            <img src="img/header_taeguk_logo_.png" alt="" />
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
+          </div>
+          <div class="right">
+            <ul>
+              <li><i class="fa-regular fa-square-minus"></i></li>
+              <li><i class="fa-regular fa-square-plus"></i></li>
+            </ul>
+            <ul class="lang">
+              <li><a href="#">ENGLISH</a></li>
+              <li><a href="#">JAPANESE</a></li>
+              <li><a href="#">CHINESE</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="inner">
+          <h1>
+            <a href="index.html"
+              ><img src="img/logo_kto_white.png" alt="로고"
+            /></a>
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="#">정보공개</a></li>
+              <li><a href="#">주요사업</a></li>
+              <li><a href="#">알림마당</a></li>
+              <li><a href="#">국민참여</a></li>
+              <li><a href="#">KTO경영</a></li>
+              <li><a href="#">공사소개</a></li>
+              <li><a href="#">채용정보</a></li>
+            </ul>
+          </nav>
+          <div class="icon">
+            <button class="search">
+              <img src="img/btn_header_search.svg" alt="검색" />
+            </button>
+            <button class="menu">
+              <img src="img/btn_header_menuall.svg" alt="메뉴바" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="visual">
+      <ul class="bg">
+        <li class="bg1">
+          <a href="#"><span>비주얼 메인이미지1</span></a>
+        </li>
+        <!-- 백그라운드 이미지 접근성위해 텍스트 작성 / css에서 text-indent: -10000px; 위해 감싸는 박스 필요  -->
+        <li class="bg2"><a href="#">비주얼 메인이미지2</a></li>
+        <li class="bg3"><a href="#">비주얼 메인이미지3</a></li>
+      </ul>
+      <div class="visual-tit">
+        <h2>세계인을 한국으로 <br />국민을 행복으로 이끄는 관광선도기관</h2>
+        <ul class="visual-menu">
+          <li class="on">국내여행정보</li>
+          <li>관광기업지원</li>
+          <li>관광데이터</li>
+        </ul>
+        <div class="line">
+          <span class="bar"></span>
+        </div>
+        <div class="sub-menu">
+          <ul class="on">
+            <li>
+              <a href="#">
+                <p>대한민국 <br />구석구석</p>
+                <img src="img/main_tour_service01.png" alt="service01" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>VISITKOREA</p>
+                <img src="img/main_tour_service02.png" alt="service02" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>두루누비</p>
+                <img src="img/main_tour_service03.png" alt="service03" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>세이프<br />스테이</p>
+                <img src="img/main_tour_service04.png" alt="service04" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>열린 관광<br />모두의 여행</p>
+                <img src="img/main_tour_service05.png" alt="service05" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>오디</p>
+                <img src="img/main_tour_service06.png" alt="service06" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>고캠핑</p>
+                <img src="img/main_tour_service07.png" alt="service07" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>하이커<br />그라운드</p>
+                <img src="img/main_tour_service08.png" alt="service08" />
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">
+                <p>한국관광<br />산업포털</p>
+                <img src="img/main_tour_service09.png" alt="service09" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>관광기업<br />혁신바우처</p>
+                <img src="img/main_tour_service10.png" alt="service10" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>관광두레</p>
+                <img src="img/main_tour_service11.png" alt="service11" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>K-MICE</p>
+                <img src="img/main_tour_service12.png" alt="service12" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>근로자<br />휴가지원</p>
+                <img src="img/main_tour_service14.png" alt="service14" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>관광e배움터</p>
+                <img src="img/main_tour_service15.png" alt="service15" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>관광전문인력<br />포털</p>
+                <img src="img/main_tour_service16.png" alt="service16" />
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">
+                <p>데이터랩</p>
+                <img src="img/main_tour_service17.png" alt="service17" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>콘텐츠랩</p>
+                <img src="img/main_tour_service19.png" alt="service19" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>포토코리아</p>
+                <img src="img/main_tour_service21.png" alt="service21" />
+              </a>
+            </li>
+          </ul>
+          <!-- visual-menu를 눌렀을 때 나오는 sub-menu를 ul로 만들어줘야 함 -->
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <section class="con01">
+        <div class="left">
+          <p>알림마당</p>
+          <h2>
+            <span>한국관광공사의</span><br />
+            새로운 소식을<br />
+            만나보세요
+          </h2>
+        </div>
+        <div class="right">
+          <ul class="release">
+            <li>
+              <a href="#">
+                <div class="more">
+                  <span>보도자료</span>
+                  <img src="img/imgi_46_btn_main_news_more.svg" alt="" />
+                </div>
+                <p class="title">
+                  한국관광 데이터랩, AI 해설사 도입해 데이터 문턱 낮췄다
+                </p>
+                <p class="txt">
+                  ‘청소년은 꿈을, 장애인·어르신은 쉼을’ 모두를 위한 여행 지원-
+                  청소년 4천 명 진로 탐색 연계 문화관광 체험여행 참가 기관 모집
+                  -- 장애인·고령자 등 관광취약계층 8백여 명 나눔여행도 접수 -
+                  한국관광공사(사장 박성혁, 이하 공사)는 청소년 문화관광
+                  체험여행과 관광취약계층 나눔여행에 참여할 기관 및 참가자를
+                  오는 31일까지 모집한다. 이번 여행은 여행 기회가 부족한 청소년
+                  및 장애인, 고령자 등에게 관광을 통한 성장과 휴식의 기회를
+                  제공하기 위해 마련됐다. 여행은 6월부터 11월까지 전국 단위로
+                  운영되며, 청소년 4천 명과 장애인·고령자 등 800여 명을 포함해
+                  총 4,800여 명 규모다. 선정 기관 및 참가자에게는 교통, 식사,
+                  숙박, 입장료, 체험비, 여행자보험 등 일체가 포함된 여행이
+                  무상으로 제공된다. 청소년 문화관광 체험여행 ‘마음에는 쉼표,
+                  꿈에는 느낌표’의 참가 대상은 방과후아카데미, 지역아동센터,
+                  자립준비청년 지원기관, 학교 밖 청소년 지원 시설 등이다. 공사는
+                  전국 각지에서 출발하는 당일형 및 체류형 17개 코스를 마련했다.
+                  참가 청소년들은 에듀·레저·힐링을 테마로 경주, 부여, 파주, 여수
+                  등 다채로운 지역여행을 즐길 수 있다. 나눔여행 ‘함께 가는 여행,
+                  함께 누리는 행복, 동행동행(同行同幸)’은 장애인, 고령자, 영유아
+                  동반가족 등을 대상으로 운영된다. 참가자들은 전국 열린관광지를
+                  거점삼아 1박 2일로 장애 유형별 맞춤 코스를 여행하며, 신규
+                  열린관광지를 점검하는 ‘소비자 평가단’ 역할도 수행한다. 모든
+                  일정에는 전문 인솔자가 동행해 안전한 여행 환경을 제공할
+                  예정이다. 자세한 사항은 열린관광 모두의 여행
+                  누리집(access.visitkorea.or.kr)에서 확인하면
+                </p>
+                <p class="date">2026-05-08</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="more">
+                  <span>보도자료</span>
+                  <img src="img/imgi_46_btn_main_news_more.svg" alt="" />
+                </div>
+                <p class="title">
+                  한국관광 데이터랩, AI 해설사 도입해 데이터 문턱 낮췄다
+                </p>
+                <p class="txt">
+                  한국관광공사, 대구·경북 ‘관광-항공’ 협력 네트워크 본격 가동-
+                  대구국제공항 중심 영남권 외국인 관광객 유치 허브 육성 및
+                  초광역 관광루트 개발 - 한국관광공사 대구경북지사는 7일 대구
+                  인터불고호텔에서 ‘대구경북 관광 협의체’ 회의를 개최했다. 이번
+                  회의는 대구국제공항을 영남권 관광의 관문(Travel Korea
+                  Gateway)으로 도약시키고, 외래 관광객 유치를 확대하고자
+                  마련됐다. 공사 대구경북지사는 개별 지자체 단위로 추진이 어려운
+                  광역 연계와 글로벌 네트워크 구축을 맡아 협력 체계의 구심점
+                  역할을 수행한다. 이날 회의에는 대구광역시, 경상북도, 경주시,
+                  안동시 등 지자체와 지역관광공사, 한국공항공사 및 여행업계
+                  관계자 40여 명이 참석했다. 오전 세션에서는 대구공항의 국제
+                  경쟁력 강화를 위한 공동 과제를 논의했다. ▲단거리 노선 및
+                  전세기 유치 확대 ▲공항 슬롯 활용률 제고 ▲대구 도심 및 경북
+                  주요 관광지 교통 연계성 강화 ▲‘대구공항 입국 = 영남권 관광
+                  시작’ 캠페인 전개 ▲연계 숙박 및 관광 인프라 확충 등이 핵심
+                  과제로 다뤄졌다. 오후 세션에서는 지역 특화 자원을 결합한
+                  초광역 인바운드 관광상품 개발 방안을 모색했다. 참석자들은
+                  안동과 경주의 유네스코 세계문화유산 및 APEC 레거시에 대구의
+                  K-팝 등 현대 문화예술을 더한 ‘K-헤리티지’ 관광루트 개발을
+                  논의했다. 공사는 해외지사 및 온라인 여행 플랫폼을 활용한
+                  마케팅 강화, 국가별 맞춤형 프로모션 전략도 공유했다. 공사
+                  박수현 대구경북지사장은 “대구·경북을 인바운드 관광 거점으로
+                  육성하기 위해서 광역 단위 협력이 필수”라며, “지자체와
+                  공항·항공, 여행업계가 함께 실질적인 외래객 유치 성과
+                </p>
+                <p class="date">2026-05-07</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="more">
+                  <span>보도자료</span>
+                  <img src="img/imgi_46_btn_main_news_more.svg" alt="" />
+                </div>
+                <p class="title">
+                  한국관광공사, ‘2026 초광역 관광교통 혁신 선도지구’ 공모
+                </p>
+                <p class="txt">
+                  한국관광공사, ‘2026 초광역 관광교통 혁신 선도지구’ 공모- 지역
+                  경계 넘는 초광역 관광권역 선정… 3년간 국비 25억 원 지원 -
+                  문화체육관광부와 한국관광공사(이하 공사)는 5월 11일부터 6월
+                  19일까지 관광교통 체계를 개선하고 외래객의 지역간 이동 편의를
+                  제고하기 위해 ‘초광역 관광교통 혁신 선도지구’에 참여할 광역
+                  지자체를 모집한다. 이번 공모는 2개 이상 광역 지자체가 연계된
+                  ‘초광역 관광권역’을 대상으로 한다. 공모 참가기관은 서로 다른
+                  광역권 내 2개 이상 지역과 지방 공공기관, 민간기업으로 구성된
+                  컨소시엄을 구성해야 한다. 또한, 3년간 국비 지원금과 동일
+                  규모의 지방비를 매칭해야 한다. 대상 지역은 ▲지역 교통여건
+                  ▲지역 관광 역량 ▲사업 계획의 적정성 등을 종합 평가해 초광역
+                  관광권역 1곳을 선정할 계획이다. 최종 선정된 지자체는 3년간
+                  국비 지원금 25억 원과 지방비 25억 원, 총 50억 원으로 광역·지역
+                  관광교통 개선, 편의 서비스 구축운영을 하게 된다. 본 공모에
+                  대한 자세한 사항은 ‘투어라즈(touraz.kr)’에서 확인할 수 있다.
+                  공사 관광교통팀 박우진 팀장은 “이번 사업은 광역 지자체 간 교통
+                  거점과 지역 관광지를 유기적으로 연결하는 교통망 확충에
+                  주력한다”라며, “지역의 매력적인 관광 콘텐츠를 교통 인프라와
+                  결합해 지역 간 연결을 통한 시너지 창출과 지역관광 활성화를
+                  도모할 방침이다”라고 밝혔다. 한편, 한편 지난해 선정된 충북
+                  청주-충남 공주·부여 권역은 교통 거점과 주요 관광지를 연결하는
+                  초광역 순환버스와 수요응답형교통(DRT)을 운행 중이다. 지난 10월
+                  본격 운영을 시작한 충북-충남 연계 초광역 순환버스는 누적 5천
+                  명 이상 이용하며
+                </p>
+                <p class="date">2026-05-08</p>
+              </a>
+            </li>
+            <li class="banner">
+              <div class="swiper bnrSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/banner01.png" alt="" /></a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/banner02.png" alt="" /></a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/banner03.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="play">
+            <ul class="btn">
+              <li><img src="img/btn_slide_prev_off.svg" alt="" /></li>
+              <li>
+                <div>
+                  <span>01</span> / 01
+                  <img src="img/slide_btn_pause.svg" alt="" />
+                </div>
+              </li>
+              <li><img src="img/btn_slide_next_off.svg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="con02">
+        <div class="inner">
+          <p class="tit">주요사업</p>
+          <h2>
+            국가경제 발전과 국민복지 증진을 위해 <br />
+            다양한 사업을 추진합니다
+          </h2>
+          <div class="swiper moSwiper">
+            <ul class="swiper-wrapper">
+              <li class="on swiper-slide">
+                <div class="txt02">
+                  <h3>국제관광지원</h3>
+                  <p>
+                    인바운드 미래성장으로 세계인이 찾는 관광대국 실현을 위해
+                    노력합니다.
+                  </p>
+                  <div class="more">
+                    <a href="#"
+                      ><img src="img/slide_btn_go_arw.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="txt02">
+                  <h3>국제관광지원</h3>
+                  <p>
+                    인바운드 미래성장으로 세계인이 찾는 관광대국 실현을 위해
+                    노력합니다.
+                  </p>
+                  <div class="more">
+                    <a href="#"
+                      ><img src="img/slide_btn_go_arw.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="txt02">
+                  <h3>국제관광지원</h3>
+                  <p>
+                    인바운드 미래성장으로 세계인이 찾는 관광대국 실현을 위해
+                    노력합니다.
+                  </p>
+                  <div class="more">
+                    <a href="#"
+                      ><img src="img/slide_btn_go_arw.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="txt02">
+                  <h3>국제관광지원</h3>
+                  <p>
+                    인바운드 미래성장으로 세계인이 찾는 관광대국 실현을 위해
+                    노력합니다.
+                  </p>
+                  <div class="more">
+                    <a href="#"
+                      ><img src="img/slide_btn_go_arw.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <section class="con03">
+        <div class="left">
+          <div class="tit-wrap">
+            <p>공사참여</p>
+            <h2>
+              국민에게 신뢰받는 <br />
+              관광 선도기관
+            </h2>
+          </div>
+
+          <div class="link_list">
+            <a href="#"
+              ><span>인사말</span><img src="img/icon_arw_go.svg" alt=""
+            /></a>
+            <a href="#"
+              ><span>조직도/직원검색</span
+              ><img src="img/icon_arw_go.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="right">
+          <ul class="vision">
+            <li>
+              <div class="wrap">
+                <h3>
+                  윤리·인권 경영 <br />클린 케이티오<span>(Clean KTO)</span>
+                </h3>
+                <p>
+                  관광산업의 Total Service Provider로써 한국관광의 새로운 성장을
+                  구현하고 있습니다.
+                </p>
+              </div>
+              <div class="wrap">
+                <a href="#"
+                  ><span>윤리 경영 </span><img src="img/icon_arw_go.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><span>인권 경영 </span><img src="img/icon_arw_go.svg" alt=""
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <h3>KTO ESG경영</h3>
+                <p>
+                  한국관광공사는 ESG경영을 통해 지속가능관광을 구현하겠습니다.
+                </p>
+              </div>
+              <div class="wrap">
+                <a href="#"
+                  ><span>비전 및 전략체계</span>
+                  <img src="img/icon_arw_go.svg" alt=""
+                /></a>
+                <a href="#"
+                  ><span>ESG경영지표 </span
+                  ><img src="img/icon_arw_go.svg" alt=""
+                /></a>
+              </div>
+            </li>
+          </ul>
+          <ul class="cs">
+            <li>
+              <a href="#"
+                ><span>똑똑한 <br />문의</span
+                ><img src="img/icon_main_organ_conversation.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>똑똑한 <br />제안</span
+                ><img src="img/icon_main_organ_feather.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>관광불편 <br />신고</span
+                ><img src="img/icon_main_organ_alert.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>관광정보 <br />등록/수정</span
+                ><img src="img/icon_main_organ_edit.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="related">
+      <div class="inner">
+        <h4><img src="img/related_site_monitor.svg" alt="" />관련사이트</h4>
+        <div class="swiper relSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#">NIS국정원</a></div>
+            <div class="swiper-slide"><a href="#">알리오플러스</a></div>
+            <div class="swiper-slide"><a href="#">청렴포털</a></div>
+            <div class="swiper-slide"><a href="#">안전신문고</a></div>
+            <div class="swiper-slide"><a href="#">청탁금지법 통합검색</a></div>
+            <div class="swiper-slide">
+              <a href="#">채용비리 통합신고센터</a>
+            </div>
+            <div class="swiper-slide"><a href="#">정부24</a></div>
+            <div class="swiper-slide"><a href="#">문화포털</a></div>
+            <div class="swiper-slide"><a href="#">문화가 있는 날</a></div>
+            <div class="swiper-slide"><a href="#">중소기업기술마켓</a></div>
+          </div>
+        </div>
+        <div class="slide-control">
+          <button class="btn-prev">
+            <img src="img/slide_btn_prev.svg" alt="" />
+          </button>
+          <button class="btn-play">
+            <img
+              class="pause"
+              src="img/main_related_slide_btn_pause.svg"
+              alt=""
+            />
+            <img
+              class="play"
+              src="img/main_related_slide_btn_play.svg"
+              alt=""
+            />
+          </button>
+          <button class="btn-next">
+            <img src="img/slide_btn_next.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="top">
+            <img src="img/logo_kto_black.png" alt="" />
+            <nav class="footer-nav">
+              <ul>
+                <li>
+                  <a href="#"><strong>개인정보처리방침</strong> </a>
+                </li>
+                <li><a href="#">저작권 보호정책</a></li>
+                <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+                <li><a href="#"> 전자우편 무단수집거부</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="address">
+            <p>
+              <strong>한국관광공사</strong>26464 강원특별자치도 원주시 세계로 10
+              한국관광공사 | 사장 : 박성혁 | TEL : 033-738-3000 | 통신판매업신고
+              : 제2022-강원원주-0381호
+            </p>
+            <p class="copyright">
+              Copyright © 한국관광공사. All rights reserved.
+            </p>
+          </div>
+        </div>
+        <div class="footer-global">
+          <div class="family">sfdsfsdfsdfsd</div>
+          <img src="img/webwatch" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
