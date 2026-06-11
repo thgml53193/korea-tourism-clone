@@ -43,27 +43,73 @@ $(function () {
     start();
   });
 
-  // con01 보도자료 배너 슬라이드 스와이퍼
-  var bnrswiper = new Swiper(".bnrSwiper", {
+  // con01 배너 슬라이드 스와이퍼
+  var bnrSwiper = new Swiper(".bnrSwiper", {
     loop: true,
-    speed: 1000,
-
-    spaceBetween: 10,
-    centeredSlides: true,
 
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
+    // 화살표 버튼
+    navigation: {
+      nextEl: ".banner-control .btn-next",
+      prevEl: ".banner-control .btn-prev",
+    },
+    // 숫자 페이징 설정
+    pagination: {
+      el: ".bn-num",
+      type: "fraction",
+
+      renderFraction: function (currentClass, totalClass) {
+        return (
+          '<span class="' +
+          currentClass +
+          '"></span>' +
+          " / " +
+          '<span class="' +
+          totalClass +
+          '"></span>'
+        );
+      },
+      formatFractionCurrent: function (number) {
+        return number < 10 ? "0" + number : number;
+      },
+      formatFractionTotal: function (number) {
+        return number < 10 ? "0" + number : number;
+      },
+    },
+  });
+  // 관련사이트 슬라이드 일시정지 / 재생 기능
+  const bannerPlayBtn = document.querySelector(".banner-control .btn-play");
+  const bannerPauseImg = bannerPlayBtn.querySelector(".pause");
+  const bannerPlayImg = bannerPlayBtn.querySelector(".play");
+
+  bannerPlayBtn.addEventListener("click", function () {
+    if (bnrSwiper.autoplay.running) {
+      bnrSwiper.autoplay.stop();
+      bannerPauseImg.style.display = "none";
+      bannerPlayImg.style.display = "block";
+    } else {
+      bnrSwiper.autoplay.start();
+      bannerPauseImg.style.display = "block";
+      bannerPlayImg.style.display = "none";
+    }
   });
 
   // con02 클릭했을 때 해당 li에 클래스
   $(".con02 li").on("click", function () {
     $(".con02 li").removeClass("on");
     $(this).addClass("on");
+
+    gsap.fromTo(
+      $(this).find(".txt02 > *"),
+      { y: 30, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 },
+    );
   });
 
-  //
+  // con02 태블릿, 모바일에서 슬라이드로 변경
   var moSwiper = new Swiper(".moSwiper", {
     slidesPerView: "auto", // CSS에 정해둔 너비(320px)를 따름
     spaceBetween: 10, // 슬라이드 간격
@@ -88,7 +134,7 @@ $(function () {
     },
   });
 
-  // 관련사이트 슬라이드 스와이퍼
+  // footer 관련사이트 슬라이드 스와이퍼
   var relSwiper = new Swiper(".relSwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
@@ -112,19 +158,68 @@ $(function () {
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".btn-next",
-      prevEl: ".btn-prev",
+      nextEl: ".footer-control .btn-next",
+      prevEl: ".footer-control .btn-prev",
     },
   });
   // 관련사이트 슬라이드 일시정지 / 재생 기능
-  $(".related .btn-play .pause").on("click", function () {
-    relswiper.autoplay.stop();
-    $(this).hide();
-    $(this).siblings(".play").show(); // 내 형제인 play는 보이고
+  const footerPlayBtn = document.querySelector(".footer-control .btn-play");
+  const footerPauseImg = footerPlayBtn.querySelector(".pause");
+  const footerPlayImg = footerPlayBtn.querySelector(".play");
+
+  footerPlayBtn.addEventListener("click", function () {
+    if (relSwiper.autoplay.running) {
+      relSwiper.autoplay.stop();
+      footerPauseImg.style.display = "none";
+      footerPlayImg.style.display = "block";
+    } else {
+      relSwiper.autoplay.start();
+      footerPauseImg.style.display = "block";
+      footerPlayImg.style.display = "none";
+    }
   });
-  $(".related .btn-play .play").on("click", function () {
-    relswiper.autoplay.start();
-    $(this).hide();
-    $(this).siblings(".pause").show(); // 내 형제인 pause는 보이고
-  });
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  function createScrollAnimation(
+    sectionSelector,
+    targetSelector,
+    extraAnimation = null,
+  ) {
+    const section = document.querySelector(sectionSelector);
+    if (!section) return;
+
+    const title = section.querySelector(".title-area");
+    const contents = section.querySelectorAll(targetSelector);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: "top 50%",
+      },
+    });
+
+    if (title) {
+      tl.from(title, { y: -50, opacity: 0, duration: 0.8, ease: "power2.out" });
+    }
+
+    tl.from(
+      contents,
+      {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+      },
+      "<",
+    );
+
+    if (extraAnimation) extraAnimation(tl);
+  }
+  // con01 타이틀 + 보도자료 리스트
+  createScrollAnimation(".con01", ".release");
+  // con02 타이틀 + 주요사업 리스트
+  createScrollAnimation(".con02", ".swiper-wrapper");
+  // con03 타이틀 + 링크, 비전, CS 리스트
+  createScrollAnimation(".con03", ".right");
 });
