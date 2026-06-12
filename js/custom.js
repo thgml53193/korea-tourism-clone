@@ -4,8 +4,10 @@ $(function () {
   let i = 0;
   let stop;
 
+  fade();
   start();
   // 페이드 함수
+
   function fade() {
     //전체 페이드 안보이게, i번째만 페이드인
     $(".bg li").stop().fadeOut();
