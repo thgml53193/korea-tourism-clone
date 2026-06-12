@@ -18,12 +18,12 @@ $(function () {
     //비주얼 메뉴 클래스 제거, i번째만 클래스
     $(".visual-menu li").removeClass("on");
     $(".visual-menu li").eq(i).addClass("on");
-    // 비주얼 메뉴에 맞틑 서브메뉴만 보이게
+    // 비주얼 메뉴에 맞는 서브메뉴만 보이게
     $(".sub-menu ul").removeClass("on");
     $(".sub-menu ul").eq(i).addClass("on");
     // 프레그레스바 채워짐
     $(".bar").css({ width: "0" });
-    $(".bar").stop().animate({ width: "100%" }, 2000);
+    $(".bar").stop().animate({ width: "100%" }, 3000);
   }
 
   //자동 함수
@@ -82,7 +82,7 @@ $(function () {
       },
     },
   });
-  // 관련사이트 슬라이드 일시정지 / 재생 기능
+  // 배너 슬라이드 일시정지 / 재생 기능
   const bannerPlayBtn = document.querySelector(".banner-control .btn-play");
   const bannerPauseImg = bannerPlayBtn.querySelector(".pause");
   const bannerPlayImg = bannerPlayBtn.querySelector(".play");
@@ -139,8 +139,8 @@ $(function () {
   // 관련사이트 슬라이드 스와이퍼
   var relSwiper = new Swiper(".relSwiper", {
     slidesPerView: "auto",
-    spaceBetween: 30,
     loop: true,
+    loopFillGroupWithBlank: false,
 
     // 한 번에 '한 칸'씩만 이동하라는 강력한 명령
     slidesPerGroup: 1,

@@ -5,6 +5,7 @@
   font-weight: normal;
   font-display: swap;
 }
+/* reset */
 * {
   margin: 0px;
   padding: 0px;
@@ -24,8 +25,9 @@ body {
   font-family: "Suit";
   color: #222;
 }
-/*header*/
-/*top*/
+
+/* header */
+/* top */
 header {
   width: 100%;
   position: absolute;
@@ -45,7 +47,7 @@ header .inner {
   max-width: 1400px;
   margin: 0 auto;
 }
-/*header left*/
+/* header left */
 header .left {
   font-size: 0.9rem;
   display: flex;
@@ -65,7 +67,7 @@ header .right ul {
 header .right .lang {
   gap: 0rem;
 }
-/*lang*/
+/* lang */
 header .lang li {
   position: relative;
   padding: 0px 1rem;
@@ -86,7 +88,7 @@ header .lang li::after {
 header .lang li:last-child::after {
   display: none;
 }
-/*headedr-bottom*/
+/* bottom */
 header .bottom .inner {
   gap: 1rem;
   margin: 1rem auto;
@@ -109,6 +111,7 @@ header button {
   border: none;
   background-color: transparent;
 }
+
 /* visual */
 #visual {
   width: 100%;
@@ -169,8 +172,7 @@ header button {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-
-/*visual .visual-tit*/
+/* visual-tit */
 #visual .visual-tit {
   position: absolute;
   left: 50%;
@@ -185,7 +187,7 @@ header button {
   display: flex;
   gap: 1rem;
 }
-/*.visual-tit안에 있는 내용*/
+/* .visual-tit안에 있는 내용 */
 #visual h2 {
   font-size: 4.5rem;
   text-align: right;
@@ -225,19 +227,8 @@ header button {
   width: 0%;
   height: 100%;
   background-color: #fff;
-  /* animation: progress 3s linear infinite; */
 }
-/* 제이쿼리로 하기 */
-/* @keyframes progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-} */
-
-/* visual */
+/* visual sub */
 #visual .sub-menu {
   width: 95%;
   margin: 0px auto;
@@ -271,6 +262,7 @@ header button {
   opacity: 0;
   transition: 0.5s;
 }
+
 /* container */
 /* con01 */
 #container .con01 {
@@ -351,7 +343,7 @@ header button {
   /* margin-top: 2rem; */
   transform: translateY(2rem);
 }
-/* 배너 슬라이드 ////////////////*/
+/* 배너 슬라이드 */
 .con01 .right .release .banner {
   padding: 0;
 }
@@ -487,6 +479,7 @@ header button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* con03 */
 #container .con03 {
   max-width: 1400px;
@@ -592,6 +585,7 @@ header button {
   justify-content: space-between;
   margin-top: 0;
 }
+
 /* related */
 .related {
   background-color: #4a5677;
@@ -604,9 +598,9 @@ header button {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  white-space: nowrap;
 }
 .related h4 {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -619,10 +613,12 @@ header button {
 }
 .relSwiper .swiper-slide {
   width: auto !important;
-  margin-right: 30px !important;
+  padding: 0 15px;
   text-align: center;
+  border: 1px solid red;
 }
 .related .footer-control {
+  flex-shrink: 0;
   display: flex;
   gap: 1rem;
 }
@@ -633,6 +629,7 @@ header button {
   border: none;
   background: transparent;
 }
+
 /* footer */
 footer {
   padding: 4rem 0;
@@ -678,17 +675,17 @@ footer {
 
 /* 1280 */
 @media (max-width: 1280px) {
-  /*header*/
-  /*top*/
+  /* header */
+  /* top */
   header .inner {
     max-width: none;
     width: 85%;
   }
-  /*header right*/
+  /* header right */
   header .right {
     display: none;
   }
-  /*headedr-bottom*/
+  /* bottom */
   header .bottom .inner {
     gap: 0;
   }
@@ -699,8 +696,9 @@ footer {
     border: none;
     background-color: transparent;
   }
+
   /* visual */
-  /*visual .visual-tit*/
+  /* visual-tit */
   #visual .visual-tit {
     width: 85%;
   }
@@ -731,6 +729,7 @@ footer {
   #visual .sub-menu img {
     display: none;
   }
+
   /* container */
   /* con01 */
   #container .con01 {
@@ -747,11 +746,13 @@ footer {
   #container .right {
     width: 100%;
   }
+
   /* con02 */
   .con02 .inner {
     width: 85%;
     max-width: none;
   }
+
   /* con03 */
   /* 왼 오 디스플레이 풀기 */
   #container .con03 {
@@ -778,6 +779,13 @@ footer {
     background-color: #4a63ad;
     backdrop-filter: blur(0);
   }
+
+  /* related */
+  .related .inner {
+    width: 85%;
+    max-width: none;
+  }
+
   /* footer */
   .footer-inner {
     width: 85%;
@@ -813,12 +821,12 @@ footer {
 }
 /* 1024 */
 @media (max-width: 1024px) {
-  /*header*/
-  /*top*/
+  /* header */
+  /* top */
   header .inner {
     width: 90%;
   }
-  /*headedr-bottom*/
+  /*bottom*/
   header .bottom .inner {
     gap: 0;
   }
@@ -826,12 +834,13 @@ footer {
     border: none;
     background-color: transparent;
   }
+
   /* visual */
-  /*visual .visual-tit*/
+  /* visual-tit */
   #visual .visual-tit {
     width: 90%;
   }
-  /*.visual-tit안에 있는 내용*/
+  /* .visual-tit안에 있는 내용 */
   #visual h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -840,7 +849,9 @@ footer {
   #visual .sub-menu li {
     width: calc((100% - 2.1rem) / 4);
   }
+
   /* container */
+  /* con01 */
   #container .con01 {
     width: 90%;
     max-width: none;
@@ -917,14 +928,13 @@ footer {
   #container .con03 {
     padding: 4rem;
   }
+
   /* related */
   .related .inner {
     width: 90%;
     gap: 1.5rem;
   }
-  .relSwiper .swiper-slide {
-    margin-right: 25px !important;
-  }
+
   /* footer */
   .footer-inner {
     width: 90%;
@@ -943,8 +953,8 @@ footer {
 
 /* 768 */
 @media (max-width: 768px) {
-  /*header*/
-  /*headedr-bottom*/
+  /* header */
+  /* bottom */
   header .bottom .inner {
     gap: 0;
   }
@@ -961,10 +971,9 @@ footer {
   header .icon img {
     width: 18px;
   }
-  /* 바텀 아이콘 사이즈 조금 줄이기  */
-  /* 로고 사이즈 줄이기 */
+
   /* visual */
-  /*.visual-tit안에 있는 내용*/
+  /* .visual-tit안에 있는 내용 */
   #visual h2 {
     font-size: 2.2rem;
     margin-bottom: 2rem;
@@ -976,6 +985,7 @@ footer {
     width: calc((100% - 2.8rem) / 5);
     font-size: 1.1rem;
   }
+
   /* container */
   /* con01 */
   #container .con01 {
@@ -1001,6 +1011,7 @@ footer {
     /* margin-top: 2rem; */
     transform: translateY(0);
   }
+
   /* con02 */
   #container .con02 {
     padding: 4rem 0;
@@ -1009,7 +1020,7 @@ footer {
     font-size: 2rem;
     margin: 1.5rem 0 3rem;
   }
-  /* 슬라이드로 바뀜///////////// */
+  /* 슬라이드로 바뀜 */
   .con02 .swiper-slide {
     width: 300px;
     height: 330px;
@@ -1027,6 +1038,7 @@ footer {
     width: 3rem;
     height: 3rem;
   }
+
   /* con03 */
   #container .con03 {
     padding: 4rem;
@@ -1067,7 +1079,11 @@ footer {
     padding: 1rem;
     border-radius: 0.5rem;
   }
+
   /* related */
+  .related {
+    padding: 1.8rem 0;
+  }
   .related .inner {
     gap: 1rem;
   }
@@ -1077,9 +1093,7 @@ footer {
   .related .relSwiper {
     font-size: 1rem;
   }
-  .relSwiper .swiper-slide {
-    margin-right: 15px !important;
-  }
+
   /* footer */
   .footer-left {
     margin-bottom: 1.5rem;
@@ -1104,22 +1118,21 @@ footer {
 
 /* 480 */
 @media (max-width: 480px) {
-  /*header*/
-  header .left {
-    font-size: 0.8rem;
-  }
-  /*top*/
+  /* header */
+  /* top */
   header .inner {
     width: 95%;
   }
-  /* 바텀 아이콘 사이즈 조금 줄이기  */
-  /* 로고 사이즈 좀 더 크게  */
+  header .left {
+    font-size: 0.8rem;
+  }
+
   /* visual */
-  /*visual .visual-tit*/
+  /* visual-tit */
   #visual .visual-tit {
     width: 95%;
   }
-  /*.visual-tit안에 있는 내용*/
+  /* .visual-tit안에 있는 내용 */
   #visual h2 {
     font-size: 1.8rem;
     margin-bottom: 3.5rem;
@@ -1131,6 +1144,7 @@ footer {
     width: calc((100% - 0.7rem) / 2);
     font-size: 0.9rem;
   }
+
   /* container */
   /* con01 */
   #container .con01 {
@@ -1141,6 +1155,7 @@ footer {
   .con01 .title-area h2 {
     font-size: 1.8rem;
   }
+
   /* con02 */
   #container .con02 {
     padding: 3.5rem 0;
@@ -1161,6 +1176,7 @@ footer {
   .con02 ul li p {
     font-size: 0.9rem;
   }
+
   /* con03 */
   #container .con03 {
     padding: 3.5rem;
@@ -1174,6 +1190,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 /* PC hover */
 @media (hover: hover) and (pointer: fine) {
   #visual .sub-menu li:hover img {
