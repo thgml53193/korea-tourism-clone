@@ -615,7 +615,6 @@ header button {
   width: auto !important;
   padding: 0 15px;
   text-align: center;
-  border: 1px solid red;
 }
 .related .footer-control {
   flex-shrink: 0;
