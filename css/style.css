@@ -609,11 +609,12 @@ header button {
 .related h4 {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   color: #f49c00;
   font-size: 1rem;
 }
 .related .relSwiper {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #fff;
 }
 .relSwiper .swiper-slide {
@@ -666,7 +667,6 @@ footer {
 }
 /* footer-global */
 .footer-global {
-  border: 1px solid red;
 }
 .footer-global .family {
   margin-bottom: 1rem;
@@ -917,6 +917,14 @@ footer {
   #container .con03 {
     padding: 4rem;
   }
+  /* related */
+  .related .inner {
+    width: 90%;
+    gap: 1.5rem;
+  }
+  .relSwiper .swiper-slide {
+    margin-right: 25px !important;
+  }
   /* footer */
   .footer-inner {
     width: 90%;
@@ -1058,6 +1066,19 @@ footer {
   .con03 .right .cs li {
     padding: 1rem;
     border-radius: 0.5rem;
+  }
+  /* related */
+  .related .inner {
+    gap: 1rem;
+  }
+  .related h4 {
+    font-size: 0.9rem;
+  }
+  .related .relSwiper {
+    font-size: 1rem;
+  }
+  .relSwiper .swiper-slide {
+    margin-right: 15px !important;
   }
   /* footer */
   .footer-left {

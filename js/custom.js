@@ -134,23 +134,23 @@ $(function () {
     },
   });
 
-  // footer 관련사이트 슬라이드 스와이퍼
+  // 관련사이트 슬라이드 스와이퍼
   var relSwiper = new Swiper(".relSwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
     loop: true,
 
-    // [필수] 한 번에 '한 칸'씩만 이동하라는 강력한 명령
+    // 한 번에 '한 칸'씩만 이동하라는 강력한 명령
     slidesPerGroup: 1,
 
-    // [필수] auto 너비일 때 위치를 딱 맞게 스냅(Snap) 잡아주는 옵션
+    // auto 너비일 때 위치를 딱 맞게 스냅(Snap) 잡아주는 옵션
     centeredSlides: false,
     slidesOffsetBefore: 0,
 
-    // [중요] 마우스나 터치로 밀 때 휙 날아가지 않게 고정
+    // 마우스나 터치로 밀 때 휙 날아가지 않게 고정
     freeMode: false,
 
-    // [중요] 루프 시 슬라이드 복제 개수를 넉넉히 (안 주면 빈 공간 생김)
+    // 루프 시 슬라이드 복제 개수를 넉넉히
     loopedSlides: 10,
 
     autoplay: {
